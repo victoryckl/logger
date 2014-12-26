@@ -17,9 +17,13 @@
  */
 package com.michaelrnovak.util.logger;
 
-import android.app.ListActivity;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
@@ -28,7 +32,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.graphics.Typeface;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
@@ -43,21 +46,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.michaelrnovak.util.logger.service.ILogProcessor;
 import com.michaelrnovak.util.logger.service.LogProcessor;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Logger extends ListActivity {
     private ILogProcessor mService;
