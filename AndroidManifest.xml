@@ -20,6 +20,6 @@
         
         <service android:name=".service.LogProcessor" android:label="Log Processor"></service>
     </application>
-    <uses-sdk android:minSdkVersion="3" />
+    <uses-sdk android:minSdkVersion="14" />
 
 </manifest> 
